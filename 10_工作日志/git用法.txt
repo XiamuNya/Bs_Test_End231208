@@ -1,0 +1,77 @@
+natsume@DESKTOP-7BKO6Q2 MINGW64 /i/陨石落地数据分析
+$ git config --global user.name "xiamu"
+
+natsume@DESKTOP-7BKO6Q2 MINGW64 /i/陨石落地数据分析
+$ git config --global user.email "2463969100@qq.com"
+
+natsume@DESKTOP-7BKO6Q2 MINGW64 /i/陨石落地数据分析
+$ git config -l
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=E:/git/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=xiamu
+user.email=2463969100@qq.com
+
+natsume@DESKTOP-7BKO6Q2 MINGW64 /i/陨石落地数据分析
+$ git init
+Initialized empty Git repository in I:/陨石落地数据分析/.git/
+
+natsume@DESKTOP-7BKO6Q2 MINGW64 /i/陨石落地数据分析 (master)
+$ git add *
+warning: in the working copy of 'templates/data/Meteorite_Landings.csv', LF will be replaced by CRLF the next time Git touches it
+
+natsume@DESKTOP-7BKO6Q2 MINGW64 /i/陨石落地数据分析 (master)
+$ ^C
+
+natsume@DESKTOP-7BKO6Q2 MINGW64 /i/陨石落地数据分析 (master)
+$ git commit -m "first commit"
+[master (root-commit) 8fdc371] first commit
+ 16 files changed, 46090 insertions(+)
+ create mode 100644 __init__.py
+ create mode 100644 __pycache__/data_kmeans.cpython-38.pyc
+ create mode 100644 __pycache__/data_processing.cpython-38.pyc
+ create mode 100644 __pycache__/modeling.cpython-38.pyc
+ create mode 100644 __pycache__/visualization.cpython-38.pyc
+ create mode 100644 data_kmeans.py
+ create mode 100644 data_processing.py
+ create mode 100644 main.py
+ create mode 100644 modeling.py
+ create mode 100644 templates/data/Meteorite_Landings.csv
+ create mode 100644 templates/plt_imgs/train_and_evaluate_model.png
+ create mode 100644 templates/plt_imgs/visualization.png
+ create mode 100644 templates/plt_imgs/visualize_correlation_heatmap.png
+ create mode 100644 templates/plt_imgs/visualize_kmeans_clusters.png
+ create mode 100644 visualization.py
+ create mode 100644 "\350\257\264\346\230\216\346\226\207\346\241\243.md"
+
+natsume@DESKTOP-7BKO6Q2 MINGW64 /i/陨石落地数据分析 (master)
+$ git branch -m master main
+
+natsume@DESKTOP-7BKO6Q2 MINGW64 /i/陨石落地数据分析 (main)
+$ git remote add origin https://github.com/XiamuNya/Yunshi_Shujufenxi.git
+
+natsume@DESKTOP-7BKO6Q2 MINGW64 /i/陨石落地数据分析 (main)
+$ git push -u origin main
+Enumerating objects: 22, done.
+Counting objects: 100% (22/22), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (22/22), 811.03 KiB | 7.11 MiB/s, done.
+Total 22 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/XiamuNya/Yunshi_Shujufenxi.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+natsume@DESKTOP-7BKO6Q2 MINGW64 /i/陨石落地数据分析 (main)
+$
