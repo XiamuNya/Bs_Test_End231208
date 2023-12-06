@@ -126,7 +126,7 @@ I:.
   # 可视化陨石质量与年份关系，并保存图表
   visualize_mass_vs_year(meteorite_df, save_path='visualization.png')
   ```
-  ![可视化图表](./templates/plt_imgs/visualization.png)
+  ![可视化图表](./00_项目源代码/templates/plt_imgs/visualization.png)
 
 
 ### 5. K-Means 聚类结果可视化
