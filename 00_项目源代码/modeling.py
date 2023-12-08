@@ -18,7 +18,12 @@ def train_and_evaluate_model(df, save_path=None):
     y = df['mass (g)']
 
     # 划分训练集和测试集
+    print('拆分数据....')
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    print(f'训练特征值数据集：\n{X_train}')
+    print(f'训练标签值数据集：\n{X_test}')
+    print(f'训练特征值数据集：\n{y_train}')
+    print(f'训练标签值数据集：\n{y_test}')
 
     # 显式设置 n_init 参数，避免警告
     kmeans = KMeans(n_clusters=5, n_init=10)
