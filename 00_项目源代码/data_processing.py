@@ -59,7 +59,7 @@ def standardize_data(df):
 
 def standardize_and_train_model(df):
     """
-    标准化数据，创建线性回归模型并进行训练。
+    创建线性回归模型并进行训练。
 
     Parameters:
     - df (pd.DataFrame): 包含数据的DataFrame
