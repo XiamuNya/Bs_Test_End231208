@@ -163,7 +163,7 @@ I:.
   # 可视化陨石质量与年份关系，并保存图表
   visualize_mass_vs_year(meteorite_df, save_path='visualization.png')
   ```
-  ![可视化图表](./templates/plt_imgs/visualization.png)
+  ![可视化图表](./00_项目源代码/templates/plt_imgs/visualization.png)
 
 
 ### 5. K-Means 聚类结果可视化
@@ -174,7 +174,7 @@ I:.
   # 聚类结果可视化
   visualize_kmeans_clusters(meteorite_df, save_path='templates/plt_imgs/visualize_kmeans_clusters.png')
   ```
-  ![可视化图表](./templates/plt_imgs/visualize_kmeans_clusters.png)
+  ![可视化图表](./00_项目源代码/templates/plt_imgs/visualize_kmeans_clusters.png)
 
 ### 6. 相关性矩阵热力图
 - 运行 `main.py` 中的 `visualize_correlation_heatmap` 函数，该函数将计算相关性矩阵并绘制热力图。
@@ -184,7 +184,7 @@ I:.
   # 相关性矩阵热力图
   visualize_correlation_heatmap(meteorite_df, save_path='templates/plt_imgs/visualize_correlation_heatmap.png')
   ```
-  ![可视化图表](./templates/plt_imgs/visualize_correlation_heatmap.png)
+  ![可视化图表](./00_项目源代码/templates/plt_imgs/visualize_correlation_heatmap.png)
 
 ### 7. 模型训练和评估
 - 运行 `main.py` 中的 `train_and_evaluate_model` 函数，该函数将使用线性回归模型进行陨石质量预测，并展示预测结果及均方误差。
@@ -194,7 +194,7 @@ I:.
   # 模型训练和评估
   train_and_evaluate_model(meteorite_df, save_path='templates/plt_imgs/train_and_evaluate_model.png')
   ```
-  ![可视化图表](./templates/plt_imgs/train_and_evaluate_model.png)
+  ![可视化图表](./00_项目源代码/templates/plt_imgs/train_and_evaluate_model.png)
 
 ### 8. 结论和进一步分析
 - 根据以上步骤的结果，得出结论并进行进一步分析，考虑模型的有效性和可解释性。
