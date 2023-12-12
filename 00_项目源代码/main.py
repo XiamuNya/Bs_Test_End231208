@@ -17,6 +17,12 @@ plt.rcParams['axes.unicode_minus'] = False  # 解决符号显示问题
 if __name__ == "__main__":
     file_path = 'templates/data/Meteorite_Landings.csv'
 
+    # 保存标准化后的数据为CSV文件
+    file_path2 = 'templates/data/standardized_data.csv'
+    meteorite_df = load_and_explore_data('templates/data/Meteorite_Landings.csv')
+    standardized_df = standardize_data(meteorite_df)
+    standardized_df.to_csv(file_path2, index=False)
+
     # 加载和探索数据
     meteorite_df = load_and_explore_data(file_path)
 

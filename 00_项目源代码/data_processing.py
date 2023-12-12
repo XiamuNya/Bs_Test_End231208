@@ -57,6 +57,8 @@ def standardize_data(df):
     df[['mass (g)']] = scaler.fit_transform(df[['mass (g)']])
     return df
 
+
+
 def standardize_and_train_model(df):
     """
     创建线性回归模型并进行训练。
