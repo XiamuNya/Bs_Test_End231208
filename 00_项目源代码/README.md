@@ -5,6 +5,42 @@
 ## 项目概述
 陨石落地数据分析项目旨在通过对 NASA 提供的陨石落地数据集进行深入分析，揭示陨石质量、年份与地理位置等属性之间的关系，以及通过聚类和建模方法洞察数据的潜在规律。通过此项目，我们将展示数据科学在探索天体事件方面的应用，从而更好地理解陨石落地事件的分布和特征。
 
+## 项目背景
+**此项目研究的是NASA美国国家航空航天局的数据，此项目并非为我自己服务，
+项目的意义是为研究者、天文学家或相关领域的专业人士提供一个工具，
+以深入研究陨石落地数据并从中获得有价值的信息。**
+
+
+### 这个项目是一个陨石着陆数据分析项目，包括数据处理、可视化、聚类分析和建模等步骤。以下是项目的整体介绍：
+## 主函数 (main.py):
+通过调用 `load_and_explore_data` 函数加载陨石着陆数据，并输出数据的基本信息。
+对数据进行清洗，删除包含缺失值的行。
+使用 `standardize_data` 函数对数据进行标准化。
+调用可视化函数，分别绘制陨石质量与年份关系的散点图、K-Means 聚类结果的散点图和相关性矩阵的热力图。
+最后，调用 `train_and_evaluate_model` 函数训练并评估线性回归模型。
+
+## 数据处理 (data_processing.py):
+包含了加载和探索数据的函数 `load_and_explore_data`。
+使用 `clean_data` 函数清理数据，删除包含缺失值的行。
+使用 `standardize_data` 函数对数据进行标准化，特别是对 '`mass (g)`' 列使用了 `StandardScaler`。
+
+## K-Means 聚类 (data_kmeans.py):
+包含了 `apply_kmeans` 函数，使用 K-Means 算法对数据进行聚类，并将聚类标签添加到原始 DataFrame 中。
+
+## 建模 (modeling.py):
+包含了 `train_and_evaluate_model` 函数，使用线性回归模型对陨石质量进行预测，并可视化预测结果。
+在模型训练之前，使用 K-Means 算法得到陨石的聚类标签。
+
+## 可视化 (visualization.py):
+### 包含了三个可视化函数：
+`visualize_mass_vs_year`: 绘制陨石质量与年份的散点图。
+
+`visualize_correlation_heatmap`: 计算相关性矩阵并绘制热力图。
+
+`visualize_kmeans_clusters`: 绘制 K-Means 聚类结果的散点图，如果聚类标签不存在则执行 K-Means 聚类。
+
+这个项目的主要目标是通过数据分析和可视化揭示陨石着陆数据的一些模式和趋势，同时尝试使用线性回归模型对陨石质量进行预测。 K-Means 聚类用于对陨石数据进行分组，以便更好地理解数据的结构。
+
 ## 数据集
 - 数据集来源：[NASA's 开放数据平台](https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh)
 - 数据集名：`Meteorite_Landings.csv`
